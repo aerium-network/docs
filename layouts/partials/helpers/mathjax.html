@@ -1,0 +1,38 @@
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+<!-- <script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      inlineMath: [['\\(', '\\)'], ['$', '$']],           
+      processEscapes: true,
+      processEnvironments: true,
+      tagSide: 'center',
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    },
+    startup: {
+    ready: function () {
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        "HTML-CSS": { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+      });
+      MathJax.Hub.Register.MessageHook("Begin Math Input", function (message) {
+        if (message[1].inputJax === "TeX") {
+          var math = MathJax.Hub.getJaxFor(message[1].script);
+          MathJax.Hub.Queue(["Text", math, "\\class{center}{ " + message[1].text + "}"]);
+        }
+      });
+    }
+  }
+  };
+
+  window.addEventListener('load', (event) => {
+    document.querySelectorAll("mjx-container").forEach(function (x) {
+      // x.parentElement.classList += 'has-jax'
+    })
+  });
+
+</script> -->

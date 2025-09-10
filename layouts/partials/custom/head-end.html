@@ -1,0 +1,17 @@
+<link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+<link href="/fontawesome/css/brands.min.css" rel="stylesheet" />
+<link href="/fontawesome/css/brands.colorful.css" rel="stylesheet" />
+<link href="/fontawesome/css/solid.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+<script>
+  window.addEventListener("load", () => {
+    quicklink.listen();
+  });
+</script>
+{{ if .Params.math }}{{ partial "helpers/mathjax.html" . }}{{ end }}
+
+{{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+{{ with resources.Get "sass/custom.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

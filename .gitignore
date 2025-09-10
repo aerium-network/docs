@@ -1,0 +1,6 @@
+public/
+.vscode
+.idea
+resources
+*.lock
+hugo_stats.json

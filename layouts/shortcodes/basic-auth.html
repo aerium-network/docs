@@ -1,0 +1,21 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"
+  integrity="sha512-DNI/FJdkfyeuPUal7lDkRVg0mFY2n4IZJJYqPbQWLL0COxLi6G6nmf5gr1vW1Bd4wYC09hOvZVsSclfXxUTU/w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+  var bcrypt = dcodeIO.bcrypt;
+
+  function generateHtpasswd(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // Ensure that bcrypt is properly loaded
+    if (typeof bcrypt !== 'undefined') {
+      var salt = bcrypt.genSaltSync(10);
+      var hash = bcrypt.hashSync(password, salt);
+      var htpasswd = username + ":" + hash;
+      document.getElementById("output").innerHTML = "<pre>" + htpasswd + "</pre>";
+    } else {
+      console.error("bcrypt library is not loaded.");
+    }
+  }
+</script>

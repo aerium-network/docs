@@ -1,0 +1,70 @@
+.community {
+  img {
+    margin: 4px;
+  }
+}
+
+.community_ran {
+  img {
+    margin: 4px;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 2px solid #ccc;
+    /* Default border color */
+    border-radius: 5px;
+    /* Rounded border */
+    padding: 8px;
+    /* Add padding */
+    width: 100%;
+    /* Full width */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width */
+}
+
+/* CSS for focused input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    /* Change border color when focused */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* CSS for custom button */
+.custom-button {
+    background-color: #007bff;
+    /* Button background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded border */
+    padding: 10px 20px;
+    /* Add padding */
+    cursor: pointer;
+    /* Add pointer cursor */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+}
+
+/* CSS for custom button hover effect */
+.custom-button:hover {
+    background-color: #0056b3;
+    /* Darker background color on hover */
+}
+
+/* make sure the long text are not wrapped */
+.hextra-scrollbar ul li a {
+  overflow-wrap: unset;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hextra-scrollbar ul  {
+  overflow-x:auto;
+}

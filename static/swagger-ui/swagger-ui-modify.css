@@ -1,0 +1,26 @@
+.swagger-ui .topbar {
+  display: none;
+}
+.swagger-ui .info .main {
+  display: none;
+}
+.swagger-ui .info {
+  margin: 0;
+}
+.swagger-ui .info .link {
+  display: none;
+}
+.swagger-ui .scheme-container {
+  background: inherit;
+  box-shadow: none;
+}
+
+.swagger-ui table,
+.swagger-ui table tr,
+.swagger-ui table td,
+.swagger-ui table thead th,
+.swagger-ui table thead tr {
+  border: none;
+  border-style: none;
+  border-width: 0;
+}

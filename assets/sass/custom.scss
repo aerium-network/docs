@@ -1,0 +1,79 @@
+.text-bg-primary {
+    color: #fff !important;
+    background-color: #150e42 !important;
+}
+
+.text-bg-secondary {
+    color: #fff !important;
+    background-color: #294ff8 !important;
+}
+
+.text-bg-info {
+    color: #000 !important;
+    background-color: #18ddd6 !important;
+}
+
+.text-bg-warning {
+    color: #000 !important;
+    background-color: #ed8f14 !important;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 6px 2px 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.hexdump {
+    font-family: monospace;
+    font-size: 12px;
+    padding-bottom: 1rem;
+
+    & .offset {
+        border-right: 2px solid #708090;
+        color: #778899;
+    }
+
+    & .ascii {
+        color: #696969;
+    }
+}
+
+.sidebar-container {
+    width: 20rem;
+}
+
+.api-doc {
+    table {
+        width: 100%;
+        display: table;
+        overflow-x:auto;
+
+        thead {
+            font-weight: 700;
+        }
+    }
+}
+
+.rpc-badge {
+    @extend .badge;
+    @extend .text-bg-primary;
+
+    &::before {
+        content: "RPC";
+    }
+}
+
+
