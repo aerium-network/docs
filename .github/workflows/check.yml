@@ -43,7 +43,7 @@ jobs:
     name: HTML proofer
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.130.0
+      HUGO_VERSION: 0.148.1
 
     steps:
       - name: Checkout
